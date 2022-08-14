@@ -1,6 +1,5 @@
-import reverse from '../src/index.js';
+import {without} from 'lodash';
 
 test('reverse', () => {
-  expect(reverse('hello')).toEqual('olleh');
-  expect(reverse('')).toEqual('');
+  expect(without([2, 1, 2, 3], 1, 2)).toEqual([3]);
 });
