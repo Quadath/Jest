@@ -1,6 +1,10 @@
-import { gt } from "lodash";
+const now = new Date();
+let now1;
 
-test('4 greater than 3', () => {
-  expect(gt(3, 4)).toBeFalsy()
-  expect(gt(4, 3)).toBeTruthy()
+beforeEach(() => {
+  now1 = new Date();
+})
+
+test('date delay', () => {
+  expect(now.getTime()).not.toBe(new Date().getTime());
 })
