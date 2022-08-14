@@ -1,5 +1,6 @@
-import {without} from 'lodash';
+import { gt } from "lodash";
 
-test('reverse', () => {
-  expect(without([2, 1, 2, 3], 1, 2)).toEqual([3]);
-});
+test('4 greater than 3', () => {
+  expect(gt(3, 4)).toBeFalsy()
+  expect(gt(4, 3)).toBeTruthy()
+})
