@@ -1,12 +1,3 @@
-// const cart = makeCart();
-// cart.addItem({ name: 'car', price: 3 }, 5);
-// cart.addItem({ name: 'house', price: 10 }, 2);
-// console.log(cart.getItems().length); // 2
-// console.log(cart.getCost()); // 35
-// cart.addItem({ name: 'house', price: 10 }, 1);
-// console.log(cart.getItems().length); // 3
-// console.log(cart.getCost()); // 45
-
 export default function makeCart() {
     return {
         items: [],
@@ -21,7 +12,6 @@ export default function makeCart() {
                     items.push(good);
                 }
             }
-            console.log(items)
         },
         getItems: function() {
             return this.items;
